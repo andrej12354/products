@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Products — MineDime Hosting</title>
+<meta name="description" content="All products offered by MineDime Hosting.">
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+body{background-color:#0b0c17;color:#e0e0ff;font-family:'Inter',sans-serif}
+a{transition:.3s ease}a:hover{opacity:.9}
+.card{background:rgba(10,10,30,.75);border:1px solid #7f5af0;border-radius:20px;padding:2rem;transition:transform .4s ease,box-shadow .4s ease}
+.card:hover{transform:translateY(-8px);box-shadow:0 0 25px #7f5af0,0 0 35px rgba(127,90,240,.2)}
+.btn{padding:.75rem 1.5rem;border-radius:12px;font-weight:bold;text-decoration:none;display:inline-block;text-align:center;transition:all .3s ease;cursor:pointer}
+.btn-primary{background:linear-gradient(90deg,#7f5af0,#9f7cff);color:#fff;box-shadow:0 4px 15px rgba(127,90,240,.4)}
+.btn-primary:hover{background:linear-gradient(90deg,#9f7cff,#7f5af0);box-shadow:0 0 25px #9f7cff}
+.section-padding{padding-top:6rem;padding-bottom:6rem}
+.section-title{margin-bottom:2rem;font-size:2rem;font-weight:bold;text-align:center}
+.fade-up{opacity:0;transform:translateY(20px);transition:opacity .6s ease,transform .6s ease}
+.fade-up.visible{opacity:1;transform:translateY(0)}
+.mobile-menu{display:none;position:absolute;top:70px;right:20px;background:rgba(15,15,35,.95);padding:1.2rem;border-radius:15px;border:1px solid #7f5af0;z-index:50}
+.mobile-menu a{display:block;margin:0.5rem 0;color:#e0e0ff;text-align:center;padding:0.5rem;border-radius:10px}
+.mobile-menu a:hover{background:rgba(127,90,240,.2)}
+</style>
+</head>
+<body class="antialiased">
+
+<header class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between relative z-20">
+<a href="index.html" class="flex items-center gap-3">
+<img src="logo.png" class="w-14 h-14 object-contain rounded-lg" alt="MineDime Logo">
+<span class="text-2xl font-extrabold text-white">MineDime Hosting</span>
+</a>
+<nav class="hidden md:flex gap-6 items-center text-sm">
+<a href="products.html" class="hover:underline">Products</a>
+<a href="pricing.html" class="hover:underline">Pricing</a>
+<a href="features.html" class="hover:underline">Features</a>
+<a href="support.html" class="hover:underline">Support</a>
+<a href="#" class="px-4 py-2 bg-indigo-500 rounded text-white">Client Area</a>
+</nav>
+<button id="menu-btn" class="md:hidden px-3 py-2 bg-slate-800 rounded-lg">Menu</button>
+<div id="mobile-menu" class="mobile-menu">
+<a href="products.html">Products</a>
+<a href="pricing.html">Pricing</a>
+<a href="features.html">Features</a>
+<a href="support.html">Support</a>
+<a href="#">Client Area</a>
+</div>
+</header>
+
+<main class="max-w-6xl mx-auto p-6 section-padding fade-up">
+<h1 class="text-4xl font-extrabold mb-8 text-center">Our Products</h1>
+<p class="text-slate-400 mb-12 text-center">We offer high-quality hosting solutions for Minecraft servers, Discord bots, and more.</p>
+
+<div class="grid gap-6 grid-cols-1 md:grid-cols-3">
+  <article class="card fade-up">
+    <h4 class="text-xl font-semibold mb-2">Minecraft Hosting</h4>
+    <p class="text-slate-300 mb-4">High-performance Minecraft servers with NVMe storage, DDoS protection, automated backups, and 24/7 support.</p>
+    <a href="pricing.html#minecraft" class="btn btn-primary w-full text-center">View Plans</a>
+  </article>
+
+  <article class="card fade-up">
+    <h4 class="text-xl font-semibold mb-2">Discord Bot Hosting</h4>
+    <p class="text-slate-300 mb-4">Reliable hosting for Discord bots, from small 256MB bots to advanced 2GB setups. Easy deployment and management.</p>
+    <a href="pricing.html#discord" class="btn btn-primary w-full text-center">View Plans</a>
+  </article>
+
+  <article class="card fade-up">
+    <h4 class="text-xl font-semibold mb-2">Plugin Installer</h4>
+    <p class="text-slate-300 mb-4">Quickly install popular Minecraft server plugins or custom mods with just a few clicks, no technical knowledge needed.</p>
+    <a href="#" class="btn btn-primary w-full text-center">Learn More</a>
+  </article>
+
+  <article class="card fade-up">
+    <h4 class="text-xl font-semibold mb-2">Server Splitter</h4>
+    <p class="text-slate-300 mb-4">Easily divide server resources to host multiple instances, maximizing efficiency and performance.</p>
+    <a href="#" class="btn btn-primary w-full text-center">Learn More</a>
+  </article>
+
+  <article class="card fade-up">
+    <h4 class="text-xl font-semibold mb-2">Custom Domains</h4>
+    <p class="text-slate-300 mb-4">Attach your own domain to your server or bot and manage DNS settings seamlessly from your dashboard.</p>
+    <a href="#" class="btn btn-primary w-full text-center">Learn More</a>
+  </article>
+
+  <article class="card fade-up">
+    <h4 class="text-xl font-semibold mb-2">Automated Backups</h4>
+    <p class="text-slate-300 mb-4">Daily or hourly backups to keep your data safe. Restore your server or bot anytime with one click.</p>
+    <a href="#" class="btn btn-primary w-full text-center">Learn More</a>
+  </article>
+</div>
+</main>
+
+<footer class="border-t border-slate-800 mt-12 py-6 text-slate-400 text-sm">
+<div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between gap-6 items-center">
+<div><strong>MineDime Hosting</strong><p>Fast hosting. No nonsense.</p></div>
+<div>Support: <a href="mailto:support@minedime.org" class="underline">support@minedime.org</a><br>
+Discord: <a href="https://discord.gg/JpcnRD5PCj" class="underline text-indigo-400">Join our Discord</a></div>
+<div>© MineDime Hosting — All rights reserved.</div>
+</div>
+</footer>
+
+<script>
+// Fade-up animation
+const faders=document.querySelectorAll('.fade-up');
+const appearOptions={threshold:.2,rootMargin:"0px 0px -50px 0px"};
+const appearOnScroll=new IntersectionObserver((entries,observer)=>{
+entries.forEach(entry=>{
+if(!entry.isIntersecting)return;
+entry.target.classList.add('visible');
+observer.unobserve(entry.target)
+})
+},appearOptions);
+faders.forEach(fader=>appearOnScroll.observe(fader));
+
+// Mobile menu toggle
+const menuBtn=document.querySelector('button');
+const mobileMenu=document.getElementById('mobile-menu');
+menuBtn.addEventListener('click',()=>{
+mobileMenu.style.display=mobileMenu.style.display==='block'?'none':'block';
+});
+</script>
+
+</body>
+</html>
